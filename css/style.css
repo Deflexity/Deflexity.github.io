@@ -1,1 +1,60 @@
-*,*:before,*:after{box-sizing:border-box}body{background-color:#000}.main{width:100%;height:100%}.main{position:fixed;margin-top:8rem;left:0;text-align:center;width:100%;height:100%}.main-image{top:0;margin:0}.main_image{position:absolute;width:100%;height:100%;position:absolute;left:0;right:0;margin:0 auto;top:50%;transform:translate(0% -50%)}@media (max-width: 1280px){body{background-color:#000}}@media (max-width: 1024px){body{background-color:#000;background-size:100% 75%;background-position:0 10%}.main{margin-top:12rem}.media_image{width:80%}}@media (max-width: 834px){body{background-color:#000;background-size:100% 70%;background-position:0 10%}.main{margin-top:25rem}}@media (max-width: 768px){body{background-color:#000;background-size:100% 70%;background-position:0 10%}.main{margin-top:19rem}}@media (max-width: 480px){body{background-color:#000;background-size:100% 50%;background-position:0 25%}}@media (max-width: 414px){body{background-color:#000;background-size:100% 80%;background-position:0 25%}}@media (max-width: 375px){body{background-color:#000;background-size:100% 80%;background-position:0 25%}.main{margin-top:10rem}}ul.menu{position:fixed;display:flex;justify-content:space-between;width:25%;top:70%;left:50%;transform:translate(-50%, -50%);list-style-type:none;padding:0}ul.menu li{display:inline-block;margin:10px}ul.menu li a i.fa{display:inline-block;height:65px;width:65px;text-align:center;line-height:30px;padding:17px;border-radius:40px;color:#424242;position:relative;transition:all ease 0.2s}ul.menu li a i.fa::after{content:" ";position:absolute;top:0;bottom:0;left:0;right:0;margin:auto;height:100%;width:100%;z-index:-1;border-radius:40px;background-color:#9E9E9E}ul.menu li a i.fa:hover{color:#fff;font-size:18px}ul.menu li a i.fa:hover::after{animation:animate ease 0.6s forwards}ul.menu li a i.fa-facebook:hover::after{background-color:#3b5998}ul.menu li a i.fa-bandcamp:hover::after{background-color:#00aced}ul.menu li a i.fa-instagram:hover::after{background-color:#8a3ab9}ul.menu li a i.fa-youtube-play:hover::after{background-color:#ff0000}@keyframes animate{0%,20%{transform:scale(1);border-radius:40px;background-color:#9E9E9E}30%{transform:scale(1.2)}40%{transform:scale(1.1)}50%{transform:scale(1);border-radius:10px}60%,100%{transform:scale(1);border-radius:5px}}@media (max-width: 1280px){ul.menu{width:35%}}@media (max-width: 1024px){ul.menu{top:60%;width:45%}}@media (max-width: 768px){ul.menu{top:52%;width:45%}}@media (max-width: 480px){ul.menu{top:58%;width:30%}ul.menu li a i.fa{display:inline-block;height:45px;width:45px;text-align:center;line-height:30px;padding:8px}}@media (max-width: 375px){ul.menu{top:52%;width:70%}ul.menu li a i.fa{display:inline-block;height:45px;width:45px;text-align:center;line-height:30px;padding:7px}}
+
+
+body {
+
+/*   background-image: url(../img/title.jpg); */
+	 /* background-position: center center ; */ /* Фоновое изображение выровнено по центру в горизонтальной и вертикальной плоскостях */
+	 background-repeat: no-repeat;  /* Фон не повторяется */
+	 background-attachment: fixed; /* Фон зафиксирован в области просмотра и потому не двигается, когда высота контента превышает высоту изображения */
+	   /* background-size: cover; */ /* Это свойство заставляет фон менять масштаб при изменении размеров содержащего его контейнера*/ 
+	  background-color: #000000; /* Цвет фона, который будет отображаться при загрузке фоновой картинки*/
+}
+
+
+.section-image {
+  margin: 10px auto;
+position: fixed;
+top: 45%;
+left: 50%;
+transform: translate(-50%, -50%);
+} 
+
+
+.container  .fa {
+color: #ffff;
+  margin-top: 5px;
+  transition: all 1s ease;
+}
+
+.container .icons-instagram:hover .fa-instagram {
+	color: #6c6c6c;
+  text-shadow: 0 0 10px #3b5998;
+  transition: all 1s ease;
+ }
+
+.container  .fa {
+color: #ffff;
+  margin-top: 5px;
+  transition: all 1s ease;
+}
+
+ .container .icons-youtube:hover .fa-youtube-play {
+	color: #6c6c6c;
+  text-shadow: 0 0 10px #3b5998;
+  transition: all 1s ease;
+}
+
+.container  .fa {
+color: #ffff;
+  margin-top: 5px;
+  transition: all 1s ease;
+}
+
+.container .icons-bandcamp:hover .fa-headphones {
+	color: #6c6c6c;
+  text-shadow: 0 0 10px #3b5998;
+  transition: all 1s ease;
+}
+
+
+
