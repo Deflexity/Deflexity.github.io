@@ -2,8 +2,8 @@ ul.menu {
   position: relative;
   display: flex;
   justify-content: space-between; 
-  width: 25%;
-  top: 70%;
+  width: 100%;
+  top: 0%;
   left: 50%;
   transform: translate(-50%, -50%);
   list-style-type: none;
@@ -105,138 +105,20 @@ ul.menu {
   }
 }
 
-@media (max-width: 1920px) {
-  ul.menu {
-    top: -50%;
-    width: 25%;
-  }
-}
-
-@media (max-width: 1440px) {
-  ul.menu {
-    width: 35%;
-  }
-}
-
-@media (max-width: 1280px) {
- ul.menu {
-   width: 35%;    
-  }   
-}
-
-@media (max-width: 1024px) {
-  ul.menu {
-    top: 60%;
-    width: 45%;
-  }
-}
-
-@media (max-width: 768px) {
-  ul.menu {
-    top: 52%;
-    width: 45%;
-  }
-}
-
-@media (max-width: 764px) {
-  ul.menu {
-    top: 58%;
-    width: 60%;
-    transform: translate(-50%, -50%);
-
-    li {
-      a {
-        i.fa {
-          display: inline-block;
-          height: 45px;
-          width: 45px;
-          text-align: center;
-          line-height: 30px;
-          padding: 7px;
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 480px) {
-  ul.menu {
-    top: 58%;
-    width: 60%;
-    transform: translate(-50%, -50%);
-    li {
-     a {
-       i.fa {
-         display: inline-block;
-         height: 45px;
-         width: 45px;
-         text-align: center;
-         line-height: 30px;
-         padding: 7px;
-       }
-      }
-     }
-    }
- }
-
- @media (max-width: 400px) {
+@media (max-width: 420px) {
    ul.menu {
-     top: 58%;
-     width: 70%;
-     transform: translate(-50%, -50%);
-
+     top: 0%;
      li {
        a {
          i.fa {
            display: inline-block;
-           height: 45px;
-           width: 45px;
+           height: 50px;
+           width: 50px;
            text-align: center;
-           line-height: 30px;
+           line-height: 35px;
            padding: 7px;
          }
        }
      }
    }
- }
-/*@ media (max-width: 414px) {
-  ul.menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    top: 50%;
-    width: 50%;
-    transform: translate(-50%, -50%);
-    li {      
-      a {
-        i.fa {
-          display: inline-block;
-          height: 45px;
-          width: 45px;
-          text-align: center;
-          line-height: 30px;
-          padding: 6px;
-        }
-      }
-    }
-  }
-} */
-
-@media (max-width: 375px) {
-  ul.menu {
-    top: 52%;
-    width: 70%;
-  li {
-    a {
-      i.fa {
-        display: inline-block;
-        height: 45px;
-        width: 45px;
-        text-align: center;
-        line-height: 30px;
-        padding: 7px;
-      }
-    }
-  }
-  }
-  }
+ } 
